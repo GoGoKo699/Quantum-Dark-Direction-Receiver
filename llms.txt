@@ -1,0 +1,9 @@
+# Quantum Dark Direction Receiver
+
+Task: estimate wholly unknown f in CP2 from iid rho_f=(I-P_f)/2, minimizing worst-case expected dark-ray infidelity. Exact rank2, equal populations and known lab reference are promises.
+
+Read science/model.md first. science/finite-budget.md proves N2 collective/one-copy tie23/40 and N3 pair-plus-single separation via a rational PPT bound. science/implementation.md makes the MUB receiver's random setting and control precision finite. science/receiver.md owns fixed24/450 POVMs and Hodge outcome labels. science/one-copy-bound.md gives the global finite adaptive lower. science/memory-noise.md proves a global spectral-estimator bound; science/calibration.md charges all independent references, rejection and systematic readout-error bounds. science/limits.md states coherent exchange ambiguity and entanglement-breaking simulation.
+
+references/RELATED_WORK.md credits Keyl/PSW, Zhu-Hayashi, Navascues, bounded-copy tomography and experimental precedents. The measurement architecture and ideal matrix estimator are inherited. No arbitrary hardware-noise guarantee or time/cost saving follows.
+
+verification/README.md describes exact and numerical checks. verification/check_finite_budget.py uses SymPy and the saved rational certificate, with no SDP optimizer. Monte Carlo baseline comparisons are explicitly selected-strategy evidence.
