@@ -170,8 +170,7 @@ E_\ell^-=\frac14
 ```
 
 where $g(f)=(\overline f_2,-\overline f_1,\overline f_0)$ in the normalized wedge basis
-$(|0\rangle\wedge|1\rangle,|0\rangle\wedge|2\rangle,
-|1\rangle\wedge|2\rangle)$.
+$(|0\rangle\wedge|1\rangle,|0\rangle\wedge|2\rangle,|1\rangle\wedge|2\rangle)$.
 The antisymmetric outcome is labelled by $A_\ell$ in **dark-ray space**. This mapping matters: using $\psi_\ell$ literally in both physical bases need not give the same overlap table.
 
 The 2-design identities imply $\sum_\ell E_\ell^\pm=P_\pm$. The final one-copy effects are $A_m/4$, twelve outcomes. The record $(\pm,\ell,m)$ has likelihood $h_\pm(u)\frac32(1-v)/144$, so the output rule above applies.
