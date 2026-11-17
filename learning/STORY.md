@@ -64,7 +64,7 @@ For example, suppose the pair reports the antisymmetric label $`A=P_{e_0}`$, and
 
 ```math
 4I+4P_{e_0}-P_{e_1}
-=\operatorname{diag}(8,3,4).
+=\mathrm{diag}(8,3,4).
 ```
 
 Its leading eigenray is $`e_0`$. Under the toy true ray, that complete record occurs with probability $`(1/16)(1/8)=1/128`$. The decision rule points in the right direction for this record without being supplied the true ray.
@@ -73,7 +73,7 @@ The symmetric branch can also help. If its label is $`A=P_{e_1}`$ and the third 
 
 ```math
 52I-28P_{e_1}-20P_{e_2}
-=\operatorname{diag}(52,24,32).
+=\mathrm{diag}(52,24,32).
 ```
 
 It again selects $`e_0`$. That complete record has probability $`1/64`$ in the toy example. Other records can produce imperfect answers; the guarantee includes their weighted losses as well. These two favorable examples illustrate the rule, not its proof or its overall success rate.

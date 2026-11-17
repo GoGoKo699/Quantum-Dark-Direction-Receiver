@@ -8,7 +8,7 @@ Write
 R_{\mathcal C}^{*}(N)=
 \inf_{\mathsf P\in\mathcal C}
 \sup_{f\in\mathbb{CP}^{2}}
-\mathbb E_f[1-\operatorname{tr}(\widehat P P_f)],
+\mathbb E_f[1-\mathrm{tr}(\widehat P P_f)],
 \qquad
 \rho_f=\frac{I-P_f}{2}.
 ```
@@ -57,7 +57,7 @@ Let Haar ray measure have total mass one and fix a guessed ray $H$. Define
 
 ```math
 B_H^{(2)}
-=\int \rho_f^{\otimes2}\operatorname{tr}(H P_f)\,df.
+=\int \rho_f^{\otimes2}\mathrm{tr}(H P_f)\,df.
 ```
 
 By covariance take $H=|0\rangle\langle0|$. With $P_\pm$ the symmetric and antisymmetric pair projectors, its eigenvalues are:
@@ -66,7 +66,7 @@ By covariance take $H=|0\rangle\langle0|$. With $P_\pm$ the symmetric and antisy
 |---|---|---:|---:|
 | Symmetric | $\lvert00\rangle$ | 1 | $1/40$ |
 | Symmetric | $(\lvert0i\rangle+\lvert i0\rangle)/\sqrt2$, $i=1,2$ | 2 | $3/80$ |
-| Symmetric | $\operatorname{Sym}^2\operatorname{span}(\lvert1\rangle,\lvert2\rangle)$ | 3 | $1/20$ |
+| Symmetric | $\mathrm{Sym}^2\mathrm{span}(\lvert1\rangle,\lvert2\rangle)$ | 3 | $1/20$ |
 | Antisymmetric | $(\lvert0i\rangle-\lvert i0\rangle)/\sqrt2$, $i=1,2$ | 2 | $1/48$ |
 | Antisymmetric | $\lvert1\rangle\wedge\lvert2\rangle$ | 1 | $1/24$ |
 
@@ -80,23 +80,23 @@ B_H^{(2)}
 For any collective POVM $E_y$ and any output $H_y$, its Haar mean fidelity is at most
 
 ```math
-\sum_y\operatorname{tr}(E_y B_{H_y}^{(2)})
-\le \frac{\operatorname{tr}P_+}{20}
-+\frac{\operatorname{tr}P_-}{24}
+\sum_y\mathrm{tr}(E_y B_{H_y}^{(2)})
+\le \frac{\mathrm{tr}P_+}{20}
++\frac{\mathrm{tr}P_-}{24}
 =\frac{17}{40}.
 ```
 
 Thus every collective strategy has worst-case infidelity at least $23/40$.
 
-A one-copy strategy attains the bound. Measure rank-one effects $w_A A$ and $w_B B$, with the second measurement allowed to depend on the first record. Put $c=\operatorname{tr}(AB)$. Before the likelihood factor $w_Aw_B/4$, the posterior ray matrix is
+A one-copy strategy attains the bound. Measure rank-one effects $w_A A$ and $w_B B$, with the second measurement allowed to depend on the first record. Put $c=\mathrm{tr}(AB)$. Before the likelihood factor $w_Aw_B/4$, the posterior ray matrix is
 
 ```math
 K_{AB}^{(2)}
-=\int P_f(1-\operatorname{tr}A P_f)(1-\operatorname{tr}B P_f)\,df
+=\int P_f(1-\mathrm{tr}A P_f)(1-\mathrm{tr}B P_f)\,df
 =\frac{(11+c)I-4(A+B)+AB+BA}{60}.
 ```
 
-Its largest eigenvalue is $(11+c)/60$, attained by a ray perpendicular to $\operatorname{span}(A,B)$. Indeed, $AB+BA\preceq A+B$, so the remaining correction is negative semidefinite.
+Its largest eigenvalue is $(11+c)/60$, attained by a ray perpendicular to $\mathrm{span}(A,B)$. Indeed, $AB+BA\preceq A+B$, so the remaining correction is negative semidefinite.
 
 Completeness gives $\sum_Bw_B=3$, $\sum_Bw_Bc=1$ for each first record, and $\sum_Aw_A=3$. The achieved Haar mean fidelity is
 
@@ -113,12 +113,12 @@ First consider a continuous covariant pair readout. Its complete record contains
 ```math
 h_s(u)=\frac32(1-u)^2,\qquad
 h_a(u)=\frac34u,\qquad
-u=\operatorname{tr}(A P_f).
+u=\mathrm{tr}(A P_f).
 ```
 
-These integrate to the unconditional branch probabilities $3/4$ and $1/4$; no branch is discarded. Measure the third specimen with the covariant POVM $3B\,dB$, whose likelihood is $\frac32(1-v)$, $v=\operatorname{tr}(B P_f)$.
+These integrate to the unconditional branch probabilities $3/4$ and $1/4$; no branch is discarded. Measure the third specimen with the covariant POVM $3B\,dB$, whose likelihood is $\frac32(1-v)$, $v=\mathrm{tr}(B P_f)$.
 
-For $c=\operatorname{tr}(AB)$, the unnormalized posterior ray matrices are
+For $c=\mathrm{tr}(AB)$, the unnormalized posterior ray matrices are
 
 ```math
 \begin{aligned}
@@ -137,7 +137,7 @@ The symmetric matrix has largest eigenvalue
 \lambda_s(c)=\frac{13+2c}{40},
 ```
 
-attained perpendicular to $\operatorname{span}(A,B)$. For the antisymmetric matrix, the nontrivial two-dimensional block of $4A-B-AB-BA$ has trace $3-2c$ and discriminant $25-24c$. Hence
+attained perpendicular to $\mathrm{span}(A,B)$. For the antisymmetric matrix, the nontrivial two-dimensional block of $4A-B-AB-BA$ has trace $3-2c$ and discriminant $25-24c$. Hence
 
 ```math
 \lambda_a(c)
@@ -251,7 +251,7 @@ The $B$ eigenvalues distinguish the blocks within each $C$ sector. Their project
 Haar-twirl normalization becomes
 
 ```math
-\sum_{i:C_i=c}x_i\operatorname{rank}R_i=d_c,
+\sum_{i:C_i=c}x_i\mathrm{rank}R_i=d_c,
 \qquad(d_{-3},d_0,d_3)=(1,16,10).
 ```
 
@@ -261,11 +261,11 @@ The comparator's Haar fidelity is at most the optimization over
 
 ```math
 x_i\ge0,\quad
-\sum_{i:C_i=c}x_i\operatorname{rank}R_i=d_c,\quad
+\sum_{i:C_i=c}x_i\mathrm{rank}R_i=d_c,\quad
 \sum_i x_iR_i^{T_1}\succeq0,
 ```
 
-with objective $\sum_i x_i\operatorname{tr}(BR_i)$. This relaxation includes PPT measurements beyond the adaptive one-copy class.
+with objective $\sum_i x_i\mathrm{tr}(BR_i)$. This relaxation includes PPT measurements beyond the adaptive one-copy class.
 
 ### A rational feasible dual
 
@@ -285,9 +285,9 @@ The exact rational $27\times27$ matrix $Y$ is supplied in
 
 ```math
 Y\succeq0,\qquad
-\lambda_{C_i}\operatorname{rank}R_i
--\operatorname{tr}(BR_i)
--\operatorname{tr}(Y R_i^{T_1})\ge0
+\lambda_{C_i}\mathrm{rank}R_i
+-\mathrm{tr}(BR_i)
+-\mathrm{tr}(Y R_i^{T_1})\ge0
 \quad\text{for every }i.
 ```
 
@@ -297,8 +297,8 @@ For every feasible seed,
 
 ```math
 \begin{aligned}
-\operatorname{tr}(B\Omega)
-&\le\sum_c\lambda_cd_c-\operatorname{tr}(Y\Omega^{T_1})\\
+\mathrm{tr}(B\Omega)
+&\le\sum_c\lambda_cd_c-\mathrm{tr}(Y\Omega^{T_1})\\
 &\le\lambda_{-3}+16\lambda_0+10\lambda_3\\
 &=\frac{46264989}{100000000}.
 \end{aligned}

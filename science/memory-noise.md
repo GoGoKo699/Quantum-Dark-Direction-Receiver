@@ -7,13 +7,13 @@ The pair receiver can tolerate imperfect storage without first localizing the un
 The first specimen waits for the second through
 
 ```math
-\mathcal D_\nu(T)=\nu T+(1-\nu)\operatorname{tr}(T)I/3,
+\mathcal D_\nu(T)=\nu T+(1-\nu)\mathrm{tr}(T)I/3,
 \qquad 0\le\nu\le1.
 ```
 
 The second specimen is fresh. Uses are independent conditional on the fixed unknown $`\nu`$. The signal pair is $`\mathcal D_\nu(\rho_f)\otimes\rho_f`$. This differs from depolarizing the whole pair. The readout is the fixed 450-outcome [design receiver](receiver.md), retaining both branches.
 
-Put $`u_\ell=\operatorname{tr}(P_{\psi_\ell}P_f)`$. Direct Born probabilities are
+Put $`u_\ell=\mathrm{tr}(P_{\psi_\ell}P_f)`$. Direct Born probabilities are
 
 ```math
 \begin{aligned}

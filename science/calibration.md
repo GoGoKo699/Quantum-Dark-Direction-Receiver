@@ -11,10 +11,10 @@ The unknown source emits independent qutrits
 \qquad f\in\mathbb{CP}^2.
 ```
 
-The target is the ray $`f`$, with loss $`1-\operatorname{tr}(P_{\widehat f}P_f)`$. Its laboratory reference is known. In every signal or calibration pair, the first qutrit undergoes
+The target is the ray $`f`$, with loss $`1-\mathrm{tr}(P_{\widehat f}P_f)`$. Its laboratory reference is known. In every signal or calibration pair, the first qutrit undergoes
 
 ```math
-\mathcal D_\nu(T)=\nu T+(1-\nu)\operatorname{tr}(T)\frac I3,
+\mathcal D_\nu(T)=\nu T+(1-\nu)\mathrm{tr}(T)\frac I3,
 \qquad 0\le\nu\le1,
 ```
 
@@ -25,9 +25,9 @@ Use $`M`$ known pure calibration pairs $`P_0\otimes P_0`$, where $`P_0=|0\rangle
 ```math
 \begin{aligned}
 \Pr_\nu(-\mid P_0\otimes P_0)
-&=\frac{1-\operatorname{tr}[\mathcal D_\nu(P_0)P_0]}2\\
+&=\frac{1-\mathrm{tr}[\mathcal D_\nu(P_0)P_0]}2\\
 &=\frac{1-\nu}{3}=:p_\nu,
-\qquad A\sim\operatorname{Bin}(M,p_\nu).
+\qquad A\sim\mathrm{Bin}(M,p_\nu).
 \end{aligned}
 ```
 

@@ -16,7 +16,7 @@ The bound is global and finite. At $`N=0`$ it gives the exact no-data risk $`2/3
 
 ## One-copy information budget
 
-Use the Fubini–Study metric for which a tangent $`\delta\perp f`$ has squared norm $`\|\delta\|^2`$ and infidelity has the same leading quadratic term. Refine a POVM to rank-one effects $`w(y)P_{\psi_y}`$. Put $`u_y=\operatorname{tr}(P_{\psi_y}P_f)`$. Then
+Use the Fubini–Study metric for which a tangent $`\delta\perp f`$ has squared norm $`\|\delta\|^2`$ and infidelity has the same leading quadratic term. Refine a POVM to rank-one effects $`w(y)P_{\psi_y}`$. Put $`u_y=\mathrm{tr}(P_{\psi_y}P_f)`$. Then
 
 ```math
 p_y=\frac{w(y)}2(1-u_y),\qquad
@@ -29,14 +29,14 @@ Completeness integrates the final expression to two. Coarse-graining cannot incr
 For adaptation, condition on the complete earlier classical record. The next setting is then held fixed when differentiating its Born probability. Score increments have conditional mean zero, so their cross terms vanish and
 
 ```math
-\operatorname{tr}_g I_{\mathrm{record}}(f)\le2N.
+\mathrm{tr}_g I_{\mathrm{record}}(f)\le2N.
 ```
 
 All pilots, setting randomization and final estimator randomization belong to that record. A hard-cap stopping rule obeys the same inequality. General outcome spaces admit a parameter-independent dominating trace measure and sequential kernels; finiteness of the outcome alphabet is unnecessary.
 
 ## Haar integration without localization
 
-Give $`f`$ the normalized Haar prior on $`\mathbb{CP}^2`$. For fixed complete record $`y`$, let $`H_y=P_{\widehat f(y)}`$ and $`q_y(f)=\operatorname{tr}(H_yP_f)`$. The intrinsic identities are
+Give $`f`$ the normalized Haar prior on $`\mathbb{CP}^2`$. For fixed complete record $`y`$, let $`H_y=P_{\widehat f(y)}`$ and $`q_y(f)=\mathrm{tr}(H_yP_f)`$. The intrinsic identities are
 
 ```math
 \Delta q_y=-12(q_y-1/3),\qquad

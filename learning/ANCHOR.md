@@ -31,8 +31,8 @@ The four real coordinates are $`(x_1,y_1,x_2,y_2)`$. The coordinate chart is a t
 | Parameterized quantum input | The mixed specimen $`\rho_f=(I-P_f)/2`$ |
 | Measurement result | A complete pair or single record, including the branch and known random setting |
 | Estimator | The reported ray projector $`\widehat P`$ |
-| Cost | $`1-\operatorname{tr}(\widehat P P_f)`$ |
-| Worst-case risk | $`\sup_f\mathbb E_f[1-\operatorname{tr}(\widehat P P_f)]`$ |
+| Cost | $`1-\mathrm{tr}(\widehat P P_f)`$ |
+| Worst-case risk | $`\sup_f\mathbb E_f[1-\mathrm{tr}(\widehat P P_f)]`$ |
 | Haar Bayes risk | The same expected loss averaged uniformly over rays; useful for a converse and for symmetry |
 
 At the chart origin, infidelity is exactly $`|z_1|^2+|z_2|^2`$ when one ray is $`e_0`$. Its leading quadratic cost matrix is therefore the four-dimensional identity. The review's pure-qubit example in §5.4.1, Eq. (203), instead uses **four times** unscaled ray infidelity. Its numerical cost constants must be rescaled before comparison.

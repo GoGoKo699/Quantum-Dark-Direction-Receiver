@@ -90,7 +90,7 @@ Indeed, $s_\min(G)=|\det G|/(s_1(G)s_2(G))$ and $s_1s_2\le\|G\|_F^2$. Therefore 
 For invertible matrices, the polar factors obey
 
 ```math
-\|\operatorname{polar}(G)-\operatorname{polar}(H)\|_\mathrm{op}
+\|\mathrm{polar}(G)-\mathrm{polar}(H)\|_\mathrm{op}
 \le\frac{2\|G-H\|_\mathrm{op}}{s_\min(G)+s_\min(H)}.
 ```
 
