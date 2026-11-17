@@ -33,7 +33,7 @@ Write $`P=P_f`$, $`b=(1+\nu)/2`$ and $`c=(1-\nu)/6`$. For the score matrix $`Z`$
 ```math
 \begin{aligned}
 \mathbb EZ&=bP+cI,\\
-V(\nu):=\mathbb E\|(I-P)Zf\|^2&=\frac{103-4\nu}{30},\\
+V(\nu):=\mathbb E\Vert (I-P)Zf\Vert ^2&=\frac{103-4\nu}{30},\\
 \mathbb E(Z-\mathbb EZ)^2
 &=\frac{182+8\nu-\nu^2}{36}I
  -\frac{8+6\nu+\nu^2}{12}P.
@@ -52,15 +52,15 @@ One way to verify the algebra is to use the branch first moments
 and the tangent moments $`\mathbb E[1_+u(1-u)]=1/10`$ and $`\mathbb E[1_-u(1-u)]=(7-\nu)/120`$. Uniformly over $`0\le\nu\le1`$,
 
 ```math
-\|Z-\mathbb EZ\|\le4,\qquad
-\|\mathbb E(Z-\mathbb EZ)^2\|\le\frac{21}{4}.
+\Vert Z-\mathbb EZ\Vert \le4,\qquad
+\Vert \mathbb E(Z-\mathbb EZ)^2\Vert \le\frac{21}{4}.
 ```
 
 The mean gap $`b`$ is at least $`1/2`$, and its principal eigenray is always $`f`$. This is why unknown visibility does not require a preliminary fitted likelihood.
 
 ## Finite risk, including large errors
 
-Let $`H=K^{-1}\sum_{j=1}^K Z_j`$ and output its leading eigenray. For every $`0<t<b/2`$,
+Let $`H=K^{-1}\sum_{j=1}^K Z_j`$ and output its leading eigenray. For every $`0\lt t\lt b/2`$,
 
 ```math
 \boxed{
@@ -74,16 +74,16 @@ Let $`H=K^{-1}\sum_{j=1}^K Z_j`$ and output its leading eigenray. For every $`0<
 To prove this, put $`E=H-\mathbb EH`$. Hermitian matrix Bernstein gives
 
 ```math
-\Pr(\|E\|>t)\le6\exp[-Kt^2/(21/2+8t/3)].
+\Pr(\Vert E\Vert >t)\le6\exp[-Kt^2/(21/2+8t/3)].
 ```
 
-On $`\|E\|\le t`$, let $`\widehat f=\alpha f+v`$, $`v\perp f`$. The leading eigenvalue is at least $`b+c-t`$. Projecting its eigen-equation onto $`f^\perp`$ gives
+On $`\Vert E\Vert \le t`$, let $`\widehat f=\alpha f+v`$, $`\langle f,v\rangle=0`$. The leading eigenvalue is at least $`b+c-t`$. Projecting its eigen-equation onto the subspace orthogonal to $`f`$ gives
 
 ```math
-\|v\|^2\le\frac{\|(I-P)Ef\|^2}{(b-2t)^2}.
+\Vert v\Vert ^2\le\frac{\Vert (I-P)Ef\Vert ^2}{(b-2t)^2}.
 ```
 
-Independence and zero mean imply $`\mathbb E\|(I-P)Ef\|^2=V(\nu)/K`$. On the remaining event, use loss at most one. This proves the boxed bound without conditioning away a failed localization or ignoring rare large errors. The estimator has no localization pilot. Since $`V`$ decreases and $`b`$ increases in $`\nu`$, substituting a declared lower bound $`\nu_0`$ gives a uniform nuisance-range theorem.
+Independence and zero mean imply $`\mathbb E\Vert (I-P)Ef\Vert ^2=V(\nu)/K`$. On the remaining event, use loss at most one. This proves the boxed bound without conditioning away a failed localization or ignoring rare large errors. The estimator has no localization pilot. Since $`V`$ decreases and $`b`$ increases in $`\nu`$, substituting a declared lower bound $`\nu_0`$ gives a uniform nuisance-range theorem.
 
 ## A strict finite comparison
 
@@ -105,7 +105,7 @@ At $`K=10^6`$ this is below $`L_{2K}`$. A simple exact check uses $`L_{2K}\ge4/(
 
 An explicit implementation tolerance can be included without multiplying a per-pair error by all pairs. Suppose each complete pair outcome distribution differs from the ideal noisy-memory distribution by total variation at most $`\tau`$, uniformly over $`f`$, and the resulting samples remain independent. Extend the ideal distribution by zero probabilities for any padded dilation labels, assign those actual labels matrix score zero and recode their parity as plus; they remain in the record. This is an extra declared readout/control contract; a scalar parity test does not establish it.
 
-Because $`\|Z\|\le3`$, the mean perturbation obeys $`\|\Delta\|\le6\tau`$. Also $`\|(I-P)Zf\|^2\le25/4`$, so its second moment increases by at most $`25\tau/4`$. Centering at the actual mean gives sample norm at most six and variance norm at most nine. Thus for $`b-2t-12\tau>0`$,
+Because $`\Vert Z\Vert \le3`$, the mean perturbation obeys $`\Vert \Delta\Vert \le6\tau`$. Also $`\Vert (I-P)Zf\Vert ^2\le25/4`$, so its second moment increases by at most $`25\tau/4`$. Centering at the actual mean gives sample norm at most six and variance norm at most nine. Thus for $`b-2t-12\tau>0`$,
 
 ```math
 R\le

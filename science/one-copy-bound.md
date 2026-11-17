@@ -16,12 +16,12 @@ The bound is global and finite. At $`N=0`$ it gives the exact no-data risk $`2/3
 
 ## One-copy information budget
 
-Use the Fubini–Study metric for which a tangent $`\delta\perp f`$ has squared norm $`\|\delta\|^2`$ and infidelity has the same leading quadratic term. Refine a POVM to rank-one effects $`w(y)P_{\psi_y}`$. Put $`u_y=\mathrm{tr}(P_{\psi_y}P_f)`$. Then
+Use the Fubini–Study metric for which a tangent with $`\langle f,\delta\rangle=0`$ has squared norm $`\Vert \delta\Vert ^2`$ and infidelity has the same leading quadratic term. Refine a POVM to rank-one effects $`w(y)P_{\psi_y}`$. Put $`u_y=\mathrm{tr}(P_{\psi_y}P_f)`$. Then
 
 ```math
 p_y=\frac{w(y)}2(1-u_y),\qquad
-\|\nabla u_y\|^2=4u_y(1-u_y),\qquad
-\frac{\|\nabla p_y\|^2}{p_y}=2w(y)u_y.
+\Vert \nabla u_y\Vert ^2=4u_y(1-u_y),\qquad
+\frac{\Vert \nabla p_y\Vert ^2}{p_y}=2w(y)u_y.
 ```
 
 Completeness integrates the final expression to two. Coarse-graining cannot increase Fisher information, so every one-copy POVM has intrinsic Fisher trace at most two. A fresh ancilla induces an ordinary POVM and changes nothing. At zero probability, the ordinary score convention omits a zero derivative contribution; this can only lower the bound.
@@ -40,7 +40,7 @@ Give $`f`$ the normalized Haar prior on $`\mathbb{CP}^2`$. For fixed complete re
 
 ```math
 \Delta q_y=-12(q_y-1/3),\qquad
-\|\nabla q_y\|^2=4q_y(1-q_y).
+\Vert \nabla q_y\Vert ^2=4q_y(1-q_y).
 ```
 
 For normalization, at $`f=e_0`$ use local coordinates $`f(z)=(\sqrt{1-|z|^2},z_1,z_2)`$. The sum of its four real second derivatives of $`q`$ is $`4[1-3q]`$; unitary invariance gives the Laplacian everywhere.

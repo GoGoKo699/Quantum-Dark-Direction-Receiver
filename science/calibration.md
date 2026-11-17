@@ -40,7 +40,7 @@ Take $`M=100000`$ and accept when $`A\le500`$, equivalently $`A/M\le q=1/200`$. 
 | True memory parameter | Calibration guarantee |
 |---|---|
 | $`\nu\ge99/100`$ | False rejection probability at most $`\alpha_M`$ |
-| $`49/50<\nu<99/100`$ | No binary certification guarantee |
+| $`49/50\lt \nu\lt 99/100`$ | No binary certification guarantee |
 | $`\nu\le49/50`$ | False acceptance probability at most $`\beta_M`$ |
 
 Writing $`D_{\mathrm{Ber}}`$ for Bernoulli relative entropy, the standard binomial Chernoff bound gives
@@ -51,16 +51,16 @@ Writing $`D_{\mathrm{Ber}}`$ for Bernoulli relative entropy, the standard binomi
 &=e^{-M D_{\mathrm{Ber}}(1/200\Vert1/300)}
 =\left(\frac23\right)^{500}
  \left(\frac{598}{597}\right)^{99500}
-<10^{-15},\\
+\lt 10^{-15},\\
 \beta_M
 &=e^{-M D_{\mathrm{Ber}}(1/200\Vert1/150)}
 =\left(\frac43\right)^{500}
  \left(\frac{596}{597}\right)^{99500}
-<\frac{11}{10^{11}}.
+\lt \frac{11}{10^{11}}.
 \end{aligned}
 ```
 
-Numerically these bounds are approximately $`1.8890\times10^{-16}`$ and $`1.0624\times10^{-10}`$. They are finite binomial bounds, not Gaussian confidence intervals. To obtain them, apply exponential Markov to $`\mathbb E e^{sA}=(1-p+pe^s)^M`$ and optimize over $`s>0`$ for the upper tail or $`s<0`$ for the lower tail. Monotonicity of binomial tails in $`p`$ gives the uniform endpoints in the table. Using $`A\ge500`$ to bound the actual rejection event $`A\ge501`$ is conservative.
+Numerically these bounds are approximately $`1.8890\times10^{-16}`$ and $`1.0624\times10^{-10}`$. They are finite binomial bounds, not Gaussian confidence intervals. To obtain them, apply exponential Markov to $`\mathbb E e^{sA}=(1-p+pe^s)^M`$ and optimize over $`s>0`$ for the upper tail or $`s\lt 0`$ for the lower tail. Monotonicity of binomial tails in $`p`$ gives the uniform endpoints in the table. Using $`A\ge500`$ to bound the actual rejection event $`A\ge501`$ is conservative.
 
 ## Signal estimator and unconditional risk
 
@@ -87,7 +87,7 @@ Its mean is $`\mathbb EZ=((1+\nu)/2)P_f+((1-\nu)/6)I`$. Hence the principal eige
 
 If calibration accepts, return this principal eigenray. If it rejects, return a uniformly random one of the three computational rays, independently of all other records. This finite classical fallback has expected loss exactly $`2/3`$ for every $`f`$. Resolve any eigenvalue tie by a fixed convention. All $`K`$ signal pairs are still prepared and measured, including when calibration rejects, so the protocol has a deterministic charged budget.
 
-The receiver's global moment and matrix-concentration argument gives, for $`0<t<(1+\nu_0)/4`$ and $`\nu\ge\nu_0`$,
+The receiver's global moment and matrix-concentration argument gives, for $`0\lt t\lt (1+\nu_0)/4`$ and $`\nu\ge\nu_0`$,
 
 ```math
 U(K,\nu_0,t)=
@@ -132,7 +132,7 @@ R_{\mathrm{paid}}
 &\le\frac{2477}{977786250}
  +6\left(\frac{5056}{5161}\right)^{1000}
  +\frac{2}{3\cdot10^{15}}\\
-&<\frac8{3000016}
+&\lt \frac8{3000016}
 \le\frac{16}{B+24+\sqrt{B(B+16)}}.
 \end{aligned}
 ```
@@ -181,11 +181,11 @@ The calibration endpoints are $`1003/300000`$ and $`1997/300000`$, and their exa
 \begin{aligned}
 \alpha_{M,\tau}
  &=\left(\frac{1003}{1500}\right)^{500}
-   \left(\frac{298997}{298500}\right)^{99500}<10^{-15},\\
+   \left(\frac{298997}{298500}\right)^{99500}\lt 10^{-15},\\
 \beta_{M,\tau}
  &=\left(\frac{1997}{1500}\right)^{500}
    \left(\frac{298003}{298500}\right)^{99500}
-   <\frac{14}{10^{11}}.
+   \lt \frac{14}{10^{11}}.
 \end{aligned}
 ```
 
@@ -197,7 +197,7 @@ R_{\mathrm{paid},\tau}
 &\le\frac{992339}{382152562848}
  +6\left(\frac{2510}{2573}\right)^{1000}
  +\frac2{3\cdot10^{15}}\\
-&<\frac8{3000016}\le L_B.
+&\lt \frac8{3000016}\le L_B.
 \end{aligned}
 ```
 
