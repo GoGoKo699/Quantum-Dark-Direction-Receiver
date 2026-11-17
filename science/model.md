@@ -15,7 +15,7 @@ The occupied eigenvalues are exactly $`1/2,1/2`$, and the third eigenvalue is ex
 The output is a ray $`\widehat f`$. Its loss and a protocol's risk are
 
 ```math
-\ell(\widehat f,f)=1-\operatorname{tr}(P_{\widehat f}P_f),
+\ell(\widehat f,f)=1-\mathrm{tr}(P_{\widehat f}P_f),
 \qquad
 R(\mathsf P)=\sup_f\mathbb E_f\ell(\widehat f,f).
 ```

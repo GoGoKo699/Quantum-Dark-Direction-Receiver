@@ -1,6 +1,6 @@
 # Related work and scientific provenance
 
-The question here is deliberately narrower than general quantum tomography: independent qutrits have the promised state $\rho_f=(I-|f\rangle\langle f|)/2$, the missing ray $f\in\mathbb{CP}^2$ is wholly unknown, and the output is scored by worst-case expected **dark-ray infidelity**. The known laboratory reference, exact rank, and equal occupied populations are assumptions. The [model](../science/model.md) fixes the comparator and the resource ledger.
+The question here is deliberately narrower than general quantum tomography: independent qutrits have the promised state $`\rho_f=(I-|f\rangle\langle f|)/2`$, the missing ray $`f\in\mathbb{CP}^2`$ is wholly unknown, and the output is scored by worst-case expected **dark-ray infidelity**. The known laboratory reference, exact rank, and equal occupied populations are assumptions. The [model](../science/model.md) fixes the comparator and the resource ledger.
 
 ## What is inherited and what is proved here
 
@@ -10,7 +10,7 @@ The question here is deliberately narrower than general quantum tomography: inde
 | Symmetric tensor-square effects and antisymmetric effects on a pair | Keyl [K06]; Zhu–Hayashi [ZH18] | Established measurement architecture. The qutrit wedge identifies the conjugate missing ray; neither coherent pair readout nor its physical principle is claimed as new. |
 | Unbiased matrix statistics for bounded-copy tomography | Pelecanos–Spilecki–Wright [PSW25] | The large-budget construction uses the two-copy specialization of established Keyl/debiasing ideas. The project supplies its finite dark-ray risk and noise accounting. |
 | Separable/PPT optimization for estimation fidelity | Navascués [N08] | Established relaxation method. The explicit finite dark-ray certificate and its rational verification are supplied here. |
-| Exact two-specimen equality | [Finite-budget theorem](../science/finite-budget.md) | The optimum risk is $23/40$ for both arbitrary collective measurements and adaptive one-copy measurements. It rules out a two-specimen advantage in this model. |
+| Exact two-specimen equality | [Finite-budget theorem](../science/finite-budget.md) | The optimum risk is $`23/40`$ for both arbitrary collective measurements and adaptive one-copy measurements. It rules out a two-specimen advantage in this model. |
 | A strict advantage with three specimens | [Finite-budget theorem](../science/finite-budget.md) | An explicit pair-plus-single receiver beats a certified lower risk bound for **every** adaptive one-copy protocol. The lower bound need not equal that comparator's optimum; no optimality of the three-specimen receiver is claimed. |
 | Imperfect storage and paid scalar calibration | [Memory noise](../science/memory-noise.md), [calibration](../science/calibration.md) | Finite guarantees charge signal and reference specimens and calibration failures under the stated depolarizing-memory model. They do not certify arbitrary apparatus errors. |
 
@@ -42,7 +42,7 @@ These repositories were inspected as read-only scientific sources. Their results
 |---|---|---|
 | [Calibrated Quantum Readout](https://github.com/GoGoKo699/Calibrated-Quantum-Readout/tree/d78e32a44cd99de01d00e38e8d65d0ddfc0e908b) | Calibrated one-copy information construction, support-rotation converse, complete-record and paid-calibration reasoning | Its full fixed-rank local Fisher objective differs from the present restricted source and global finite ray loss. |
 | [Quantum Readout Rank Threshold](https://github.com/GoGoKo699/Quantum-Readout-Rank-Threshold/tree/7be2f7b2cf400425ea236c0feef4617e2ba7534f) | State-independent parity/design readout, pure antisymmetric support encoding, separate continuous-Haar comparison | Its universal rank-two information guarantee and rank-three obstruction are not finite dark-ray risk dominance. |
-| [Off the Wall: unknown dark mode](https://github.com/GoGoKo699/Quantum-Off-the-Wall/blob/f9216cb24ba27183dcffa8fd45cce31fe89827a4/science/sensing-applications.md#1-calibrating-an-unknown-dark-mode) | Exact equal-population source, fixed 24-outcome construction, uniform asymptotic coefficient at most $7.70424$ versus one-copy lower coefficient $8$ | The certificate is not an optimum or a finite-sample guarantee. The present theorem resolves finite instances under explicit additional receiver models. |
+| [Off the Wall: unknown dark mode](https://github.com/GoGoKo699/Quantum-Off-the-Wall/blob/f9216cb24ba27183dcffa8fd45cce31fe89827a4/science/sensing-applications.md#1-calibrating-an-unknown-dark-mode) | Exact equal-population source, fixed 24-outcome construction, uniform asymptotic coefficient at most $`7.70424`$ versus one-copy lower coefficient $`8`$ | The certificate is not an optimum or a finite-sample guarantee. The present theorem resolves finite instances under explicit additional receiver models. |
 
 ## Scope of the comparison
 

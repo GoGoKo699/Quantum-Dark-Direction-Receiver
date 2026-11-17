@@ -46,13 +46,13 @@ The prepared matrices are density operators in this range. The 2-design identity
 
 ```math
 \mathcal D_\nu(T)
-=\sum_\ell\operatorname{tr}(F_\ell T)\sigma_{\nu,\ell}.
+=\sum_\ell\mathrm{tr}(F_\ell T)\sigma_{\nu,\ell}.
 ```
 
 For any joint effect $`E_y`$ on stored-first plus fresh-second, a one-copy strategy can measure $`F_\ell`$ on the first specimen, store its classical result, prepare the known ancilla $`\sigma_{\nu,\ell}`$, and induce the conditional second-specimen POVM
 
 ```math
-G_{y|\ell}=\operatorname{tr}_1[
+G_{y|\ell}=\mathrm{tr}_1[
 (\sigma_{\nu,\ell}^{1/2}\otimes I)E_y
 (\sigma_{\nu,\ell}^{1/2}\otimes I)].
 ```

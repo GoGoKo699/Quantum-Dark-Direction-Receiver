@@ -7,3 +7,5 @@ Read science/model.md first. science/finite-budget.md proves N2 collective/one-c
 references/RELATED_WORK.md credits Keyl/PSW, Zhu-Hayashi, Navascues, bounded-copy tomography and experimental precedents. The measurement architecture and ideal matrix estimator are inherited. No arbitrary hardware-noise guarantee or time/cost saving follows.
 
 verification/README.md describes exact and numerical checks. verification/check_finite_budget.py uses SymPy and the saved rational certificate, with no SDP optimizer. Monte Carlo baseline comparisons are explicitly selected-strategy evidence.
+
+Learning: one selected anchor, Demkowicz-Dobrzanski–Gorecki–Guta2020arXiv2001.11742v2. learning/README.md routes learning/STORY.md, learning/ANCHOR.md and exactly30intrinsic targets in learning/MILESTONES.md (12background+18narrative). Personal coaching and learner records are not in this repository.
