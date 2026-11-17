@@ -1,0 +1,313 @@
+{
+  "seed": 2026111701,
+  "design": {
+    "ray_count": 225,
+    "outcome_count": 450,
+    "weight_sum": 1.0,
+    "max_projective_moment_error_degree_1_to_4": 1.1102230246251565e-16
+  },
+  "moment_checks": [
+    {
+      "nu": 0,
+      "prob_sum_error": 2.220446049250313e-16,
+      "mean_error": 8.081528537188995e-16,
+      "variance_error": 1.0471264911842553e-14,
+      "tangent_variance_error": 8.881784197001252e-16
+    },
+    {
+      "nu": 0,
+      "prob_sum_error": 0.0,
+      "mean_error": 4.0783534705545724e-16,
+      "variance_error": 1.0720881967303815e-14,
+      "tangent_variance_error": 1.3322676295501878e-15
+    },
+    {
+      "nu": 0,
+      "prob_sum_error": 2.220446049250313e-16,
+      "mean_error": 5.358784098687204e-16,
+      "variance_error": 9.233492099549238e-15,
+      "tangent_variance_error": 2.220446049250313e-15
+    },
+    {
+      "nu": 0.8,
+      "prob_sum_error": 1.1102230246251565e-16,
+      "mean_error": 7.877396712350132e-16,
+      "variance_error": 1.2904751943659213e-14,
+      "tangent_variance_error": 1.7763568394002505e-15
+    },
+    {
+      "nu": 0.8,
+      "prob_sum_error": 0.0,
+      "mean_error": 5.766881792027646e-16,
+      "variance_error": 9.91673854318653e-15,
+      "tangent_variance_error": 4.440892098500626e-16
+    },
+    {
+      "nu": 0.8,
+      "prob_sum_error": 0.0,
+      "mean_error": 7.934066774428808e-16,
+      "variance_error": 1.3951269679908121e-14,
+      "tangent_variance_error": 2.6645352591003757e-15
+    },
+    {
+      "nu": 0.9,
+      "prob_sum_error": 1.1102230246251565e-16,
+      "mean_error": 2.8520354139701146e-16,
+      "variance_error": 1.1729877920373637e-14,
+      "tangent_variance_error": 3.1086244689504383e-15
+    },
+    {
+      "nu": 0.9,
+      "prob_sum_error": 0.0,
+      "mean_error": 6.012315415949773e-16,
+      "variance_error": 1.1634594656622712e-14,
+      "tangent_variance_error": 1.7763568394002505e-15
+    },
+    {
+      "nu": 0.9,
+      "prob_sum_error": 2.220446049250313e-16,
+      "mean_error": 1.4012797795273088e-15,
+      "variance_error": 1.4507737964569032e-14,
+      "tangent_variance_error": 8.881784197001252e-16
+    },
+    {
+      "nu": 1.0,
+      "prob_sum_error": 0.0,
+      "mean_error": 5.660439270999345e-16,
+      "variance_error": 1.515330543659221e-14,
+      "tangent_variance_error": 1.3322676295501878e-15
+    },
+    {
+      "nu": 1.0,
+      "prob_sum_error": 2.220446049250313e-16,
+      "mean_error": 1.188423051631073e-15,
+      "variance_error": 2.353781213727026e-14,
+      "tangent_variance_error": 1.7763568394002505e-15
+    },
+    {
+      "nu": 1.0,
+      "prob_sum_error": 2.220446049250313e-16,
+      "mean_error": 8.335275172665439e-16,
+      "variance_error": 2.0331265053199034e-14,
+      "tangent_variance_error": 8.881784197001252e-16
+    }
+  ],
+  "monte_carlo": [
+    {
+      "specimens": 50,
+      "nu": 1.0,
+      "trials": 1000,
+      "mean_pair_infidelity": 0.12869414334926496,
+      "pair_standard_error": 0.0031907071284051998,
+      "mean_selected_single_infidelity": 0.17685465909726594,
+      "single_standard_error": 0.004744883644144387,
+      "scaled_pair": 6.434707167463248,
+      "scaled_selected_single": 8.842732954863298
+    },
+    {
+      "specimens": 50,
+      "nu": 0.9,
+      "trials": 1000,
+      "mean_pair_infidelity": 0.13421119723702782,
+      "pair_standard_error": 0.0033518857340683306,
+      "mean_selected_single_infidelity": 0.17793650390827132,
+      "single_standard_error": 0.0044021040111904865,
+      "scaled_pair": 6.710559861851391,
+      "scaled_selected_single": 8.896825195413566
+    },
+    {
+      "specimens": 50,
+      "nu": 0.8,
+      "trials": 1000,
+      "mean_pair_infidelity": 0.15185315946917785,
+      "pair_standard_error": 0.0035639048981154155,
+      "mean_selected_single_infidelity": 0.17192655295499037,
+      "single_standard_error": 0.00452305450663818,
+      "scaled_pair": 7.592657973458892,
+      "scaled_selected_single": 8.596327647749519
+    },
+    {
+      "specimens": 100,
+      "nu": 1.0,
+      "trials": 1000,
+      "mean_pair_infidelity": 0.06492395244230473,
+      "pair_standard_error": 0.0014971284752526247,
+      "mean_selected_single_infidelity": 0.09566916732462791,
+      "single_standard_error": 0.0023539153828453425,
+      "scaled_pair": 6.492395244230472,
+      "scaled_selected_single": 9.56691673246279
+    },
+    {
+      "specimens": 100,
+      "nu": 0.9,
+      "trials": 1000,
+      "mean_pair_infidelity": 0.07102960197521872,
+      "pair_standard_error": 0.001711692828706692,
+      "mean_selected_single_infidelity": 0.09349251475651228,
+      "single_standard_error": 0.0023105539941205705,
+      "scaled_pair": 7.102960197521872,
+      "scaled_selected_single": 9.349251475651227
+    },
+    {
+      "specimens": 100,
+      "nu": 0.8,
+      "trials": 1000,
+      "mean_pair_infidelity": 0.08086576591238906,
+      "pair_standard_error": 0.0019910384952345245,
+      "mean_selected_single_infidelity": 0.09282760121156085,
+      "single_standard_error": 0.002324622246111866,
+      "scaled_pair": 8.086576591238906,
+      "scaled_selected_single": 9.282760121156084
+    },
+    {
+      "specimens": 200,
+      "nu": 1.0,
+      "trials": 1000,
+      "mean_pair_infidelity": 0.033307898999883796,
+      "pair_standard_error": 0.000768363784576496,
+      "mean_selected_single_infidelity": 0.048929811471435346,
+      "single_standard_error": 0.0011604236633851058,
+      "scaled_pair": 6.661579799976759,
+      "scaled_selected_single": 9.785962294287069
+    },
+    {
+      "specimens": 200,
+      "nu": 0.9,
+      "trials": 1000,
+      "mean_pair_infidelity": 0.03778773869976093,
+      "pair_standard_error": 0.0009084336841386772,
+      "mean_selected_single_infidelity": 0.04738213349685393,
+      "single_standard_error": 0.001121177687525259,
+      "scaled_pair": 7.557547739952186,
+      "scaled_selected_single": 9.476426699370787
+    },
+    {
+      "specimens": 200,
+      "nu": 0.8,
+      "trials": 1000,
+      "mean_pair_infidelity": 0.04083601711262709,
+      "pair_standard_error": 0.0009672820762928128,
+      "mean_selected_single_infidelity": 0.04848162499098181,
+      "single_standard_error": 0.0011659702052201448,
+      "scaled_pair": 8.167203422525418,
+      "scaled_selected_single": 9.696324998196362
+    },
+    {
+      "specimens": 1000,
+      "nu": 1.0,
+      "trials": 1000,
+      "mean_pair_infidelity": 0.006412877433369408,
+      "pair_standard_error": 0.0001353240692639689,
+      "mean_selected_single_infidelity": 0.00982942665164855,
+      "single_standard_error": 0.0002304535828959319,
+      "scaled_pair": 6.412877433369408,
+      "scaled_selected_single": 9.82942665164855
+    },
+    {
+      "specimens": 1000,
+      "nu": 0.9,
+      "trials": 1000,
+      "mean_pair_infidelity": 0.0073426394831294615,
+      "pair_standard_error": 0.00016995381470860367,
+      "mean_selected_single_infidelity": 0.00961107819461616,
+      "single_standard_error": 0.00022522271102439685,
+      "scaled_pair": 7.342639483129462,
+      "scaled_selected_single": 9.61107819461616
+    },
+    {
+      "specimens": 1000,
+      "nu": 0.8,
+      "trials": 1000,
+      "mean_pair_infidelity": 0.0077774099784689195,
+      "pair_standard_error": 0.0001751804319066376,
+      "mean_selected_single_infidelity": 0.009567555242060299,
+      "single_standard_error": 0.0002145869841891227,
+      "scaled_pair": 7.77740997846892,
+      "scaled_selected_single": 9.5675552420603
+    },
+    {
+      "specimens": 5000,
+      "nu": 1.0,
+      "trials": 1000,
+      "mean_pair_infidelity": 0.0013051161980670734,
+      "pair_standard_error": 3.0238849834274415e-05,
+      "mean_selected_single_infidelity": 0.0019829302899386178,
+      "single_standard_error": 4.448156924971016e-05,
+      "scaled_pair": 6.525580990335367,
+      "scaled_selected_single": 9.914651449693089
+    },
+    {
+      "specimens": 5000,
+      "nu": 0.9,
+      "trials": 1000,
+      "mean_pair_infidelity": 0.0014437982208488883,
+      "pair_standard_error": 3.298616856733832e-05,
+      "mean_selected_single_infidelity": 0.0019590841180208473,
+      "single_standard_error": 4.211404035452028e-05,
+      "scaled_pair": 7.2189911042444415,
+      "scaled_selected_single": 9.795420590104236
+    },
+    {
+      "specimens": 5000,
+      "nu": 0.8,
+      "trials": 1000,
+      "mean_pair_infidelity": 0.0016013549782647586,
+      "pair_standard_error": 3.778537290484868e-05,
+      "mean_selected_single_infidelity": 0.0018166537508612648,
+      "single_standard_error": 4.071343040677675e-05,
+      "scaled_pair": 8.006774891323793,
+      "scaled_selected_single": 9.083268754306324
+    }
+  ],
+  "full_pair_born_checks": {
+    "completeness_error": 8.844710292662705e-15,
+    "minimum_effect_eigenvalue": -1.4188930025080496e-17,
+    "maximum_probability_formula_error": 5.204170427930421e-18
+  },
+  "finite_bound_evaluations": [
+    {
+      "pairs": 100000,
+      "specimens": 200000,
+      "nu": 1,
+      "t": 0.043,
+      "main_upper": 3.950222409492025e-05,
+      "bad_event_upper": 1.6332323069553414e-07,
+      "total_upper": 3.9665547325615786e-05,
+      "all_adaptive_one_copy_lower": 3.999680027197632e-05,
+      "strict_separation": true
+    },
+    {
+      "pairs": 200000,
+      "specimens": 400000,
+      "nu": 0.95,
+      "t": 0.031,
+      "main_upper": 1.9834390834272064e-05,
+      "bad_event_upper": 7.773078141728121e-08,
+      "total_upper": 1.9912121615689346e-05,
+      "all_adaptive_one_copy_lower": 1.999920003399852e-05,
+      "strict_separation": true
+    },
+    {
+      "pairs": 1000000,
+      "specimens": 2000000,
+      "nu": 0.9,
+      "t": 0.015,
+      "main_upper": 3.9146187775677395e-06,
+      "bad_event_upper": 3.214837233926169e-09,
+      "total_upper": 3.917833614801666e-06,
+      "all_adaptive_one_copy_lower": 3.999968000271998e-06,
+      "strict_separation": true
+    },
+    {
+      "pairs": 10000000,
+      "specimens": 20000000,
+      "nu": 0.85,
+      "t": 0.0051,
+      "main_upper": 3.967215315018882e-07,
+      "bad_event_upper": 1.0813661785636278e-10,
+      "total_upper": 3.9682966811974457e-07,
+      "all_adaptive_one_copy_lower": 3.9999968000027194e-07,
+      "strict_separation": true
+    }
+  ]
+}
