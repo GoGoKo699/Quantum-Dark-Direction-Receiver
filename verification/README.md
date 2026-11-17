@@ -20,3 +20,9 @@ The output directory is optional and must be outside the source repository. The 
 The saved [exploratory numerical reference](receiver_reference_results.json) has a fixed seed and labels the selected baseline. It is not evidence of superiority over every adaptive measurement. That conclusion uses the exact certificate or the global analytical lower bound together with the finite upper bound.
 
 All mathematical statements retain the source, reference-preparation and receiver promises in [the model](../science/model.md). A passing check is not an experiment, independent expert certification, exhaustive novelty verification or hosted rendering review.
+
+## Actual hosted mathematics
+
+The read-only `Hosted mathematics` workflow runs the pinned-source collector on same-repository pull requests. It first probes the README, then compares every Markdown page and every mathematical expression against the actual commit-pinned GitHub renderer at widths 1440 and 760. The artifact retains HTML, screenshots, source/structure comparisons and the report. Human inspection of the actual images remains necessary; a green structural report does not prove visual readability or mathematical correctness.
+
+The included collector/checker bytes come from Guinevere commit `4f63125dafba0e0af2432528627b9cbf56d4b08f`. They execute with an anonymous browser and read-only repository permissions, without a secret or persisted checkout credential. Temporary CI artifacts are verification evidence with limited retention, not a scientific data archive.

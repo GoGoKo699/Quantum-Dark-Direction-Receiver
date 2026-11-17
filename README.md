@@ -38,6 +38,10 @@ The two-copy symmetry architecture, Keyl measurement and basic matrix estimator 
 
 Unknown coherent memory rotation can make the parity architecture unidentifiable; scalar visibility calibration does not fix that problem. No optimal pair constant, exact three-specimen one-copy optimum, unrestricted hardware-noise theorem, laboratory-time saving or hardware-cost advantage is claimed.
 
+## Learn the complete story
+
+The selected educational anchor is Demkowicz-Dobrzański, Górecki and Guţă, *Multi-parameter estimation beyond Quantum Fisher Information* (2020), [arXiv:2001.11742v2](https://arxiv.org/abs/2001.11742v2). Begin with the [worked story](learning/STORY.md), then the [source-to-project bridge](learning/ANCHOR.md) and the [30-milestone map](learning/MILESTONES.md). The [learning entrypoint](learning/README.md) connects the background, finite receiver and paid-calibration account.
+
 ## Reproduce
 
 ```bash
