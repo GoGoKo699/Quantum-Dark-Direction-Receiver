@@ -1,4 +1,4 @@
-# A finite separation at three specimens
+# Two-specimen equality and the adaptive one-copy certificate
 
 For the exact qutrit family and dark-ray loss in [the model](model.md), two specimens give **no advantage even to an unrestricted collective receiver**. Three specimens suffice: an explicit pair measurement followed by one single-copy measurement beats every adaptive one-copy strategy.
 
@@ -47,7 +47,7 @@ R_{\mathrm{pair+single}}^{*}(3)
 
 The displayed receiver has worst-case infidelity about $`0.53012400`$, while every adaptive one-copy receiver has worst-case infidelity at least $`0.53735011`$. The certified improvement exceeds $`0.007226`$. A continuous covariant version has the slightly stronger exact risk $`1907/3600`$.
 
-These are finite worst-case statements. The lower bound does not identify the optimal one-copy risk at three specimens, and neither receiver is claimed to be optimal among pair strategies. The two-specimen equality and three-specimen separation identify the first total budget at which pair access can improve this task; at budgets zero and one the measurement classes coincide.
+The two-specimen equality and three-specimen separation identify the first total budget at which pair access can improve the qutrit task. The [measurement hierarchy](measurement-hierarchy.md) gives the exact optimum for sequential pair and single measurements in either order. The adaptive one-copy risk at three specimens remains bounded by the certificate below.
 
 The measurement architecture is inherited from covariant highest-weight/Keyl measurement and coherent two-copy readout; see [Pelecanos–Spilecki–Wright](https://arxiv.org/abs/2510.07788) and [Zhu–Hayashi](https://arxiv.org/abs/1709.06112). The contribution here is the global finite comparison and its certificate.
 

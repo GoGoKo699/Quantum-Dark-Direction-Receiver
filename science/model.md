@@ -1,6 +1,6 @@
 # A missing qutrit direction as an estimation task
 
-A source fills a two-dimensional subspace equally and leaves its orthogonal ray empty. The receiver must identify that missing ray in a known laboratory reference. This is a promised state-estimation experiment, rather than a model of every physical device with a weak or dark response.
+A source fills a two-dimensional subspace equally and leaves its orthogonal ray empty. The receiver must identify that missing ray in a known laboratory reference. This is a promised state-estimation experiment. The general ideal theorem uses the uniform state on the complement of one unknown ray in dimension $`d`$. Here we specify the qutrit case and the resource ledger for its pair receivers.
 
 ## Input, output and loss
 
@@ -10,7 +10,7 @@ For a wholly unknown ray $`f\in\mathbb{CP}^2`$, every independent signal specime
 \rho_f=\frac{I-P_f}{2},\qquad P_f=|f\rangle\!\langle f|.
 ```
 
-The occupied eigenvalues are exactly $`1/2,1/2`$, and the third eigenvalue is exactly zero. No nominal ray, eigenspace, preliminary localization or training example of $`f`$ is supplied. The laboratory qutrit basis and the declared control model are known. Changing the population promise, allowing full-rank leakage or removing that reference changes the experiment.
+The occupied eigenvalues are exactly $`1/2,1/2`$, and the third eigenvalue is exactly zero. No nominal ray, eigenspace, preliminary localization or training example of $`f`$ is supplied. The laboratory qutrit basis and the declared control model are known. The occupied populations and known laboratory reference are assumptions throughout. The [ideal collective theorem](collective-minimax.md) allows dimension $`d\ge2`$, with occupied populations $`1/(d-1)`$.
 
 The output is a ray $`\widehat f`$. Its loss and a protocol's risk are
 
@@ -28,7 +28,7 @@ The **one-copy comparator** may measure every fresh specimen with an arbitrary P
 
 The **pair receiver** may store one qutrit for one preparation interval and measure it jointly with a fresh second qutrit. Between blocks it retains classical data. An odd remaining specimen can be measured separately. All parity branches and all readout outcomes count; antisymmetric heralding does not supply free successful specimens.
 
-For the finite three-specimen theorem, controls are known and ideal until the explicitly quantified implementation perturbation is introduced. For the larger-budget theorem, the first qutrit passes through a specified memory channel and the pair readout has a declared error contract. These are different operating points of the same target task.
+The [three-qutrit hierarchy](measurement-hierarchy.md) also compares unrestricted joint POVMs, fixed-cut separable POVMs and POVMs with biseparable individual effects. The ideal comparisons give all classes known controls. The finite pair implementation has a separate control perturbation bound. For the larger-budget theorem, the first qutrit passes through a specified memory channel and the pair readout has a declared error contract. These are different operating points of the same target task.
 
 ## Total specimen accounting
 
@@ -47,10 +47,11 @@ The fixed-budget protocol measures every allocated signal pair even when calibra
 | Result | Exact scope | Authoritative proof |
 |---|---|---|
 | Two specimens give no collective advantage | Global minimax risk $`23/40`$ for unrestricted collective and adaptive one-copy readout | [Finite budgets](finite-budget.md) |
-| Three specimens permit a pair advantage | Ideal pair-plus-single risk $`1907/3600`$; every adaptive one-copy risk is at least $`0.53735011`$ | [Finite budgets](finite-budget.md) |
+| Every ideal collective budget | Exact minimax formula in dimension at least two, with the first collective benefit at the dimension for dimensions at least three | [Collective minimax risk](collective-minimax.md) |
+| Three qutrits distinguish four measurement classes | Exact optima for fully joint, effectwise biseparable and fixed-cut or sequential pair-plus-single readout. The adaptive one-copy lower bound is strict. | [Measurement hierarchy](measurement-hierarchy.md) |
 | A finite implementation preserves the small-budget gap | Fixed finite quantum outcomes, finite random settings and explicitly bounded control precision | [Implementation](implementation.md) |
 | A fixed 450-outcome receiver tolerates specified memory noise | Global finite risk, with every signal record retained | [Memory noise](memory-noise.md) |
 | Independent calibration can be paid | Explicit total budget, stationarity/independence promises and unconditional failure contributions | [Calibration](calibration.md) |
 | Some memory errors destroy the construction's benefit | Exact exchange ambiguity for SWAP-commuting readouts; entanglement-breaking simulation for sufficiently depolarized storage | [Limits](limits.md) |
 
-The exact three-specimen one-copy optimum and the optimal pair receiver are not determined. A numerical comparison with selected estimators is reported separately from the class-wide certified bound. Specimen savings do not establish laboratory-time, gate-count, energy or hardware-cost savings.
+The exact three-specimen adaptive one-copy risk remains open. The proved advantages compare specimen use at fixed ideal measurement access or under the declared finite receiver controls.

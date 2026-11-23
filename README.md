@@ -1,42 +1,31 @@
 # Quantum Dark Direction Receiver
 
-**When can two-copy readout identify an entirely unknown missing direction better than every adaptive one-copy measurement?** Independent qutrits have state $`\rho_f=(I-|f\rangle\langle f|)/2`$. The target is the wholly unknown ray $`f\in\mathbb{CP}^2`$, scored by worst-case expected ray infidelity. Exact rank two, equal populations and a known laboratory reference are explicit promises.
+**How many specimens must a receiver measure together to locate an unknown empty direction?** Each independent specimen occupies the orthogonal complement of an unknown ray $`f`$ with equal populations. The receiver estimates $`f`$ in a known laboratory reference and minimizes worst-case expected ray infidelity.
 
-Two specimens cannot help: even unrestricted collective measurements have the same minimax risk $`23/40`$ as adaptive one-copy readout. **Three specimens suffice.** A pair-plus-single construction has a certified finite advantage over the complete adaptive one-copy class, including biased estimators and all classical histories.
+For any dimension and specimen budget, the [collective minimax theorem](science/collective-minimax.md) gives the exact risk and a finite measurement attaining it. In dimension $`d\ge3`$, separate measurements are optimal through $`d-1`$ specimens. At $`d`$ specimens, attaining the optimum requires a measurement across all $`d`$.
 
-## Finite results
+## Three qutrits
 
-| Operating point | Pair receiver | Every adaptive one-copy receiver |
-|---|---|---|
-| Two specimens, ideal known controls | Exact risk $`23/40`$ | Exact risk $`23/40`$ |
-| Three specimens, covariant ideal benchmark | Risk $`1907/3600\approx0.529722`$ | Risk at least $`0.53735011`$ |
-| Three specimens, explicit finite randomness and declared control tolerances | Risk below $`0.531375`$ | Same lower bound $`0.53735011`$ |
-| Total budget three million, paid scalar memory calibration and bounded readout errors | Certified risk below $`2.596812\times10^{-6}`$ | Risk above $`2.666652\times10^{-6}`$, even granting all specimens as signals and ideal apparatus |
+Two qutrits give exact risk $`23/40`$ with either separate or collective measurements. At three specimens the [measurement hierarchy](science/measurement-hierarchy.md) gives four distinct levels.
 
-The [three-specimen converse](science/finite-budget.md) is an exact rational PPT certificate, rather than an asymptotic Fisher comparison or a simulation against selected strategies. The [finite implementation](science/implementation.md) uses a fixed 24-outcome pair measurement, a 12-outcome single measurement, 2304 fair random bits and quantified rotation/readout tolerances. It stores only one qutrit before joining the second.
+| Measurement access | Minimax infidelity |
+|---|---:|
+| Fully joint | $`21/40=0.525`$, exact |
+| Individual POVM effects biseparable across possibly different cuts | $`1-25/64-\sqrt{6001}/960\approx0.52868112`$, exact |
+| Fixed-cut separable or sequential joint pair and single in either order | $`1-83/192-3\sqrt{17}/320\approx0.52905422`$, exact |
+| Adaptive single-copy | $`\ge 0.53735011`$, certified lower bound |
 
-The [paid-calibration result](science/calibration.md) uses a separate fixed 450-outcome receiver and global matrix estimator. Its three-million-specimen ledger contains 200,000 known-reference specimens and 2.8 million signal specimens. It assumes independent stationary first-qutrit depolarizing storage with visibility at least $`0.99`$ and a separately established full-outcome readout-error bound of $`10^{-5}`$ in total variation. Calibration rejection contributes to unconditional risk. The scalar check does not learn arbitrary control errors or validate the isotropic noise law.
+The broad class with biseparable effects allows different bipartitions across effects of one measurement. Randomizing over complete fixed-cut separable measurements gives the fixed-cut value. The converse uses the fully antisymmetric sector. The source never occupies that sector, but the complete measurement still has to cover it.
+
+## Finite control and paid calibration
+
+The [finite implementation](science/implementation.md) gives a three-specimen pair receiver with bounded control error and risk below $`0.531375`$. It uses a 24-outcome pair measurement, a 12-outcome single measurement and 2304 fair random bits. The receiver stores one qutrit before joining the second.
+
+The [paid-calibration result](science/calibration.md) uses a separate fixed 450-outcome pair receiver and global matrix estimator. At a total budget of three million, including 200,000 known-reference specimens, its risk is below $`2.596812\times10^{-6}`$. Even with the entire budget as signals and ideal apparatus, adaptive single-copy readout has risk above $`2.666652\times10^{-6}`$. The analysis assumes independent stationary first-qutrit depolarizing storage with visibility at least $`0.99`$ and a separate full-outcome readout-error bound of $`10^{-5}`$ in total variation. Calibration rejection contributes to unconditional risk. An unknown coherent rotation can make the parity architecture ambiguous. See [receiver limits](science/limits.md).
 
 ## Read the science
 
-Start with the [scientific route](science/README.md), then choose a question:
-
-| Question | Account |
-|---|---|
-| What is unknown, and what may the comparator do? | [Model and resource ledger](science/model.md) |
-| How does a pair reveal its missing ray? | [Parity, conjugate hole and fixed receivers](science/receiver.md) |
-| Why is three the earliest useful total budget? | [Exact finite comparison and certificate](science/finite-budget.md) |
-| How are randomness and control precision finite? | [Implementation](science/implementation.md) |
-| How are all adaptive one-copy strategies bounded at larger budgets? | [Global lower bound](science/one-copy-bound.md) |
-| What survives imperfect storage and paid calibration? | [Memory noise](science/memory-noise.md) and [calibration](science/calibration.md) |
-| Which imperfections defeat this architecture? | [Coherent ambiguity and entanglement-breaking limits](science/limits.md) |
-| Which results are inherited? | [Related work](references/RELATED_WORK.md) |
-
-## Attribution and practical scope
-
-The two-copy symmetry architecture, Keyl measurement and basic matrix estimator are inherited. Local-estimation/PPT certification and experimental two-copy sensing also have established precedents. The contribution here is the model-specific finite dark-ray separation, its earliest total-budget onset, and the specified noise/calibration resource comparison. The [source comparison](references/RELATED_WORK.md) states these boundaries explicitly.
-
-Unknown coherent memory rotation can make the parity architecture unidentifiable; scalar visibility calibration does not fix that problem. No optimal pair constant, exact three-specimen one-copy optimum, unrestricted hardware-noise theorem, laboratory-time saving or hardware-cost advantage is claimed.
+Start with the [scientific route](science/README.md) or [model and resource ledger](science/model.md). The [source comparison](references/RELATED_WORK.md) credits the inherited Keyl receiver, two-copy readout and matrix estimator. The new results are the exact finite ray-loss converse and the comparison between measurement classes. The collective theorem concerns ideal measurement access and specimen counts. The finite pair implementation has its own control promises and calibration ledger.
 
 ## Learn the complete story
 
