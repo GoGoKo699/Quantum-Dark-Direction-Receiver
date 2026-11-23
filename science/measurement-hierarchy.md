@@ -34,7 +34,7 @@ D_G=Y-B_G\succeq0,
 \mathrm{tr}(Y)=\frac{19}{40}.
 ```
 
-The equality subspace of the score bound consists of $`(G^\perp)^{\otimes3}`$ and the determinant line $`Q`$, where $`G^\perp`$ denotes the plane perpendicular to the range of $`G`$. In the symmetric and mixed sectors, the intersection with $`(G^\perp)^{\otimes3}`$ has rank four in each case. Weighting the two intersection projectors by $`10/4`$ and $`16/4`$, and adding $`Q`$, gives a seed that rotates into a normalized covariant POVM. Its effect is proportional to the identity on each permutation multiplicity space before rotation. Schur averaging therefore normalizes each sector by its trace. It attains mean fidelity $`19/40`$ and has constant risk. The [all-budget theorem](collective-minimax.md) gives the same value.
+The equality subspace of the score bound consists of $`W^{\otimes3}`$ and the determinant line $`Q`$, where $`W=\mathrm{ker}\,G`$ is the plane perpendicular to the guessed ray. In the symmetric and mixed sectors, the intersection with $`W^{\otimes3}`$ has rank four in each case. Weighting the two intersection projectors by $`10/4`$ and $`16/4`$, and adding $`Q`$, gives a seed that rotates into a normalized covariant POVM. Its effect is proportional to the identity on each permutation multiplicity space before rotation. Schur averaging therefore normalizes each sector by its trace. It attains mean fidelity $`19/40`$ and has constant risk. The [all-budget theorem](collective-minimax.md) gives the same value.
 
 The determinant line has zero input probability for every $`f`$. It still contributes to measurement completeness. In particular, for every complete POVM the total weight $`\sum_y\mathrm{tr}(QE_y)`$ is one. A product effect across a cut can cover that line only while putting some additional weight outside the equality subspace. The restricted optima turn on the least possible cost of covering the line.
 
@@ -65,7 +65,7 @@ because the normalized determinant vector is proportional to $`|0\rangle|w_{12}\
 =t|x|^2+(3/2+t)|y|^2+(2+t/2)|z|^2-b.
 ```
 
-For $`\eta>0`$, define
+For $`\eta\gt 0`$, define
 
 ```math
 p_\eta(t)=\frac{t}{t+\eta}+\frac{1-t}{3/2+t+\eta},
@@ -172,7 +172,7 @@ Applying the common laboratory rotation yields this fidelity for every input ray
 
 ## Adaptive single-copy readout and implementation scope
 
-The [released rational certificate](finite-budget.md#3-a-certificate-covering-every-adaptive-one-copy-strategy) bounds the fidelity of every adaptive single-copy receiver by $`0.46264989`$. It includes arbitrary one-copy measurements, biased estimates and adaptive use of classical histories. The fixed-cut fidelity exceeds that bound even with $`\sqrt{17}`$ replaced by $`4`$. The two restricted fidelity deficits below $`19/40`$ are $`(4+9/u_M)/1200`$. They are strictly positive, and $`u_{17}>u_9`$ gives the strict ordering between the two restricted optima. The precise single-copy optimum at three specimens remains open here.
+The [released rational certificate](finite-budget.md#3-a-certificate-covering-every-adaptive-one-copy-strategy) bounds the fidelity of every adaptive single-copy receiver by $`0.46264989`$. It includes arbitrary one-copy measurements, biased estimates and adaptive use of classical histories. The fixed-cut fidelity exceeds that bound even with $`\sqrt{17}`$ replaced by $`4`$. The two restricted fidelity deficits below $`19/40`$ are $`(4+9/u_M)/1200`$. They are strictly positive, and $`u_{17}\gt u_9`$ gives the strict ordering between the two restricted optima. The precise single-copy optimum at three specimens remains open here.
 
 This hierarchy uses the exact rank-two equal-population model with ideal known controls. [Finite-control implementation](implementation.md) concerns the earlier explicit pair receiver. [Paid calibration](calibration.md) treats a separate operating point with detector readout and memory assumptions.
 
