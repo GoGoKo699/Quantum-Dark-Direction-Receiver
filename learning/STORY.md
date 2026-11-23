@@ -2,7 +2,7 @@
 
 Imagine three distinguishable laboratory modes. A device emits one qutrit at a time, always inside some two-dimensional plane and equally spread over that plane. The remaining direction is empty. The plane can point anywhere, so the receiver must discover the empty ray rather than verify a supplied guess.
 
-The promise is precise: each specimen has state $`\rho_f=(I-P_f)/2`$. Here $`P_f`$ is the projector onto the unknown empty ray. Exact rank two and equal occupied populations matter throughout. This story explains that experiment; it does not assume that an arbitrary weakly populated device satisfies the promise.
+The promise is precise: each specimen has state $`\rho_f=(I-P_f)/2`$. Here $`P_f`$ is the projector onto the unknown empty ray. The example uses exact rank two and equal occupied populations. The ideal collective calculation also works for a uniformly occupied hyperplane in any finite dimension. The pair receiver and paid calibration below use the qutrit source.
 
 ## Start with one orientation we can see
 
@@ -80,16 +80,35 @@ It again selects $`e_0`$. That complete record has probability $`1/64`$ in the t
 
 The base MUB apparatus has orientation-dependent performance. A common independent known laboratory rotation is therefore applied to the pair readout, the third-specimen readout and the reported ray. Haar averaging makes its risk the same at every true direction. A finite setting algorithm with 2304 fair random bits approximates that averaging with a uniform error bound, includes its conditioning fallback and requires stated physical control tolerances. It does not assume an exact Haar sample from finitely many bits.
 
-The result is a finite comparison:
+These are the risks of the worked pair receivers and the lower bound that covers every adaptive single-copy receiver.
 
 | Three-specimen receiver | Worst-case expected infidelity |
 |---|---:|
-| Continuous covariant reference calculation | $`1907/3600\approx0.529722`$ |
+| Continuous covariant pair-plus-single receiver | $`1907/3600\approx0.529722`$ |
 | Ideal MUB pair-plus-single readout with common Haar setting | About $`0.530124`$ |
 | Explicit finite setting and the stated control-error budget | Below $`0.531375`$ |
 | Every adaptive one-copy protocol | At least $`0.53735011`$ |
 
 The last row is not the performance of one selected tomography algorithm. Every adaptive one-copy history induces a product of positive effects. Such effects satisfy a positivity condition after transposing any specimen register. Enlarging the comparator to that larger PPT class makes the lower-bound problem easier. An explicit rational dual certificate bounds even that enlarged class. The exact verifier checks the certificate; a numerical optimizer only guided its discovery. The [finite-budget proof](../science/finite-budget.md) provides the full reduction and qualification that the precise one-copy optimum is still unknown.
+
+## What all three specimens can do together
+
+Keep all three qutrits until the receiver can measure them jointly. The equality of the specimens lets us decompose the tensor power into subspaces distinguished by how the registers transform under permutations. Give each subspace its own decision rule. The [collective proof](../science/collective-minimax.md) finds the best fidelity in every such subspace by asking which measurement effects place zero population on the guessed missing ray.
+
+At three specimens, the fully symmetric sector and the mixed-symmetry sector each receive probability $`1/2`$. Their best conditional fidelities are $`5/12`$ and $`8/15`$. The fully antisymmetric sector receives zero probability because the specimens all lie in a two-dimensional plane. The total best fidelity is $`(5/12+8/15)/2=19/40`$, so the exact infidelity is $`21/40`$.
+
+That zero-probability sector still matters. A measurement must sum to the identity on the entire three-qutrit register. An effect that factors across a pair and a single qutrit can cover the fully antisymmetric sector only by also using directions that lower the score. This is why the best pair-plus-single measurement falls short of fully joint readout.
+
+| Three-specimen measurement access | Minimax infidelity |
+|---|---:|
+| Fully joint POVM | $`21/40=0.525000`$, exact |
+| POVM whose individual effects are biseparable | $`1-25/64-\sqrt{6001}/960\approx0.528681`$, exact |
+| Sequential pair and single in either order, or complete fixed-cut separable POVMs | $`1-83/192-3\sqrt{17}/320\approx0.529054`$, exact |
+| Adaptive single-copy measurement | At least $`0.53735011`$ |
+
+In the second row, each effect may use a mixture of bipartitions. In the third row, each complete fixed-cut POVM uses the same bipartition for every effect. Randomizing among complete fixed-cut POVMs gives the same optimum. Either order of the sequential implementation attains that value. The [measurement hierarchy proof](../science/measurement-hierarchy.md) separates these cases and constructs the attaining effects.
+
+In dimension $`d\ge3`$, separate measurements match the collective optimum through $`d-1`$ specimens. A ray perpendicular to all the observed rank-one outcome vectors attains the score bound. At $`d`$ specimens, the fully antisymmetric sector again forces a loss for any measurement whose effects are biseparable. This identifies the first budget at which fully joint access helps in the ideal model.
 
 ## Why Fisher information is not the finish line
 
@@ -109,6 +128,6 @@ This is a specimen advantage after **scalar memory calibration** is paid. The sa
 
 ## Put the whole result together
 
-The useful new endpoint is a finite dark-ray comparison: a pair block becomes helpful at three total specimens in the ideal promised task, and a larger fixed receiver retains a certified advantage under a specified noisy-memory and paid-calibration contract. The collective measurement architecture, basic matrix estimator and PPT methods have earlier sources, credited in [related work](../references/RELATED_WORK.md).
+The ideal calculation gives the exact collective minimax risk at every specimen budget. Three qutrits already separate fully joint access, biseparable effects, sequential pair access and separate readout. The larger fixed pair receiver establishes a different guarantee under its stated memory and paid calibration contract. [Related work](../references/RELATED_WORK.md) credits the earlier collective measurement architecture, matrix estimator and PPT methods.
 
 The experiment still needs storage, joint control, ancillas, calibrated tolerances and a reference source. Saving specimens does not prove lower laboratory time, energy or hardware expense. The [30-milestone map](MILESTONES.md) connects those boundaries to the mechanism and proofs; the [anchor bridge](ANCHOR.md) identifies the foundations supplied by the selected review.

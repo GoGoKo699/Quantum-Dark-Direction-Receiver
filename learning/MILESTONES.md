@@ -1,10 +1,10 @@
 # Thirty milestones from a missing ray to a finite receiver
 
-This is the project's common understanding map. Its single educational anchor is Demkowicz-Dobrzański, Górecki and Guţă, *Multi-parameter estimation beyond Quantum Fisher Information*, [arXiv:2001.11742v2](https://arxiv.org/abs/2001.11742v2), published in J. Phys. A **53**, 363001 (2020). The [anchor bridge](ANCHOR.md) translates its estimation language into this project's promised qutrit model.
+This is the project's common understanding map. Its single educational anchor is Demkowicz-Dobrzański, Górecki and Guţă, *Multi-parameter estimation beyond Quantum Fisher Information*, [arXiv:2001.11742v2](https://arxiv.org/abs/2001.11742v2), published in J. Phys. A **53**, 363001 (2020). The [anchor bridge](ANCHOR.md) translates its estimation language into the missing-ray model, with rank-two qutrits as the worked example.
 
-The map has **12 background/preliminary milestones** and **18 narrative/innovation milestones**. The background connects physical states, measurement records, risk and symmetry into one complete comparison framework. The narrative then builds the pair mechanism and finite converse, makes the receiver implementable, and closes the resource ledger with noise, calibration and limitations. This allocation leaves the specialist algebra in the scientific sources while making the contribution understandable as one story.
+The map has **12 background/preliminary milestones** and **18 narrative/innovation milestones**. The background connects physical states, measurement records, risk and symmetry into one complete comparison framework. The narrative builds the pair mechanism, exact collective formula and three-specimen hierarchy. It then closes the resource ledger for a noisy pair receiver. This allocation leaves the specialist algebra in the scientific sources while making the contribution understandable as one story.
 
-Each milestone is a conceptual target, rather than a claim to cover every technical lemma. Dependencies refer to earlier targets; source pointers identify the authoritative statements. Anchor sections supply foundations and context. The qutrit posterior calculations, rational PPT certificate, finite implementation and paid calibration proofs are supplied by this repository and its credited research dependencies, rather than attributed to the review.
+Each milestone is a conceptual target, rather than a claim to cover every technical lemma. Dependencies refer to earlier targets; source pointers identify the authoritative statements. Anchor sections supply foundations and context. The exact collective score, qutrit hierarchy, rational PPT certificate and paid calibration proofs are developed in this repository with the research dependencies credited in the scientific account.
 
 ## Background and preliminaries: M01–M12
 
@@ -28,7 +28,7 @@ Each milestone is a conceptual target, rather than a claim to cover every techni
 
 **Dependencies and story role:** M01. It connects the target ray to the actual specimens carrying information about it.
 
-**Conceptual connection:** The unknown direction is encoded through an absence, while the two occupied directions have no preferred basis inside their plane.
+**Conceptual connection:** The unknown direction is encoded through an absence, while the occupied subspace has no preferred basis. The same uniform hyperplane promise defines the ideal problem in any finite dimension.
 
 **Source pointers:** Anchor §1.2; [promised source](../science/model.md#input-output-and-loss).
 
@@ -74,7 +74,7 @@ Each milestone is a conceptual target, rather than a claim to cover every techni
 
 **Understanding target:** Allow arbitrary one-copy POVMs, fresh ancillas and the entire classical history, while recognizing the prohibition on coherent information linking unknown specimens. Explain why one stored qutrit changes that access model.
 
-**Dependencies and story role:** M04–M05. It fixes the strongest comparator the claimed receiver must beat.
+**Dependencies and story role:** M04–M05. It fixes the separate-readout comparator and the resource that a joint block adds.
 
 **Conceptual connection:** The distinction concerns coherent measurement access, rather than a comparison with one selected tomography algorithm.
 
@@ -144,7 +144,7 @@ Each milestone is a conceptual target, rather than a claim to cover every techni
 
 **Central question:** Which pieces must be fixed before the words “pair advantage” have an operational meaning?
 
-**Understanding target:** State the source promise, reported ray, loss, finite specimen ledger, permitted references and measurement classes together. Explain how a constructive upper bound and a full-class lower bound must match these choices.
+**Understanding target:** State the source promise, reported ray, loss, finite specimen ledger, permitted references and measurement classes together. Explain how an attaining protocol and a full-class lower bound must match these choices. Describe unrestricted collective access and the effect-level factorization that defines a biseparable comparator.
 
 **Dependencies and story role:** M01–M11. This integrates the background phase into the project's complete decision problem.
 
@@ -178,41 +178,41 @@ Each milestone is a conceptual target, rather than a claim to cover every techni
 
 **Source pointers:** Anchor §1.2 for POVM conventions; [24-outcome receiver](../science/receiver.md#the-24-outcome-small-budget-receiver) and [fixed finite measurements](../science/finite-budget.md#fixed-finite-quantum-measurements).
 
-### M15 — Two specimens have a collective ceiling
+### M15 — The score ceiling in each collective sector
 
-**Central question:** What limits even an unrestricted joint measurement at total budget two?
+**Central question:** How can the same optimality argument work at two qutrits and at an arbitrary specimen budget?
 
-**Understanding target:** Follow how a Bayesian reward operator is bounded separately on the symmetric and antisymmetric sectors. Explain why completeness then bounds the fidelity of every collective POVM and every estimator.
+**Understanding target:** Recognize that identical copies split into Schur sectors with known weights. Explain why the largest conditional score in each sector is attained on its subspace with zero occupation of the guessed ray. Use the weighted conditional fidelities to recover the qutrit risk $`23/40`$ at two specimens and $`21/40`$ at three.
 
-**Dependencies and story role:** M08, M11, M13. It establishes a finite obstruction before looking for an advantage.
+**Dependencies and story role:** M04, M08–M09, M13–M14. It sets the exact benchmark for the restricted measurements.
 
-**Conceptual connection:** A powerful physical pair interaction need not improve the chosen loss at every budget.
+**Conceptual connection:** The occupied-subspace projector supplies both the attaining measurement and the score-maximizing support. The Schur weighting tells how often the source reaches each case.
 
-**Source pointers:** Anchor §§5.2–5.3; [two-specimen operator bound](../science/finite-budget.md#1-exact-equality-at-two-specimens).
+**Source pointers:** Anchor §§5.3–5.4 for covariant score optimization, [exact collective risk](../science/collective-minimax.md) and [two-qutrit calculation](../science/finite-budget.md#1-exact-equality-at-two-specimens).
 
-### M16 — Separate measurements attain that ceiling
+### M16 — Separate measurements reach the ceiling up to dimension minus one
 
-**Central question:** Why does the two-specimen ceiling prove equality of measurement classes rather than just a lower bound?
+**Central question:** Why can signals that interact during readout provide no gain at the smallest budgets?
 
-**Understanding target:** Explain the one-copy rule that reports a ray perpendicular to both rank-one outcome rays, and how a common twirl supplies a constant-risk implementation. Combine attainability with M15 to obtain the exact risk of 23/40.
+**Understanding target:** Given rank-one outcomes from separate specimens, find a guess perpendicular to all their outcome rays when the specimen count is at most $`d-1`$. Explain why each corresponding product effect lies in the score-maximizing subspace for that guess and why a common rotation makes the risk orientation-independent.
 
-**Dependencies and story role:** M09, M14–M15. It completes the first finite-budget comparison.
+**Dependencies and story role:** M04, M06, M09, M15. It shows that the first budgets can reach the collective benchmark with separate readout.
 
-**Conceptual connection:** Exact equality requires a converse and an attaining strategy under matched assumptions; the absence of a pair benefit at two is an established result, not a failed numerical search.
+**Conceptual connection:** The argument uses the spare dimension in which to place the estimate. Qutrits with two specimens are one case of that geometric condition.
 
-**Source pointers:** Anchor §5.3, with §5.4 as a separate finite-copy qubit illustration; [two-specimen equality](../science/finite-budget.md#1-exact-equality-at-two-specimens).
+**Source pointers:** Anchor §5.3 for averaging, [general onset proof](../science/collective-minimax.md) and [qutrit attainment](../science/finite-budget.md#1-exact-equality-at-two-specimens).
 
-### M17 — A third specimen changes the posterior decision
+### M17 — A third specimen changes the pair decision
 
-**Central question:** How can one pair record and one separate record produce a useful ray estimate?
+**Central question:** How does a single readout combine with the two parity branches of the pair?
 
-**Understanding target:** Interpret the posterior ray matrix for each parity branch and explain why its leading eigenray maximizes conditional mean fidelity. Relate the overlap of the two outcome rays to the branch score.
+**Understanding target:** Explain the posterior leading-ray decision in the worked receiver. For the antisymmetric branch, use the mean overlap $`1/3`$ and concavity of the optimal conditional score to see why a final unbiased basis is optimal. Track why either order of the two blocks can attain the same risk.
 
-**Dependencies and story role:** M08, M13–M16. It builds the constructive side of the three-specimen separation.
+**Dependencies and story role:** M04, M08–M09, M13–M16. It uses the pair mechanism to reach the exact sequential three-specimen score.
 
-**Conceptual connection:** The estimator uses both branches and the complete third-specimen outcome; it needs neither a nominal ray nor a localization pilot.
+**Conceptual connection:** The last block can use the first block's classical outcome. The proof still has to normalize the last measurement on every such history.
 
-**Source pointers:** Anchor §5.2; [three-specimen strategy](../science/finite-budget.md#2-a-three-specimen-attaining-strategy).
+**Source pointers:** Anchor §§5.2–5.4 for posterior decisions, [worked receiver](STORY.md#the-third-specimen-changes-the-comparison), [finite pair calculation](../science/finite-budget.md#2-a-three-specimen-attaining-strategy) and [exact sequential optimum](../science/measurement-hierarchy.md).
 
 ### M18 — Certifying the entire one-copy comparator
 
@@ -226,29 +226,29 @@ Each milestone is a conceptual target, rather than a claim to cover every techni
 
 **Source pointers:** Anchor §2.4 as optimization context; [PPT converse](../science/finite-budget.md#3-a-certificate-covering-every-adaptive-one-copy-strategy), [exact verifier](../verification/check_finite_budget.py) and [verification scope](../verification/README.md).
 
-### M19 — The earliest budget for a pair advantage
+### M19 — At the first helpful budget, joint access sets the optimum
 
-**Central question:** What new operational conclusion follows when the two finite comparisons are put together?
+**Central question:** Why does the fully antisymmetric sector change the best attainable risk even though this source never populates it?
 
-**Understanding target:** Combine the exact equality at two with the strict three-specimen upper/lower gap. Distinguish the earliest helpful total budget from an optimal pair receiver or an exact three-specimen one-copy minimax value.
+**Understanding target:** Explain how global normalization forces a POVM to cover the fully antisymmetric sector at $`d`$ specimens. For $`d\ge3`$, relate that coverage to a score penalty for effects with a product decomposition across bipartitions. Order the three-qutrit risks for fully joint readout, biseparable effects, fixed-cut or sequential access, and adaptive one-copy readout. Identify the one-copy row as a lower bound.
 
-**Dependencies and story role:** M15–M18. This is the first narrative synthesis: the mechanism and converse jointly establish a finite capability.
+**Dependencies and story role:** M11, M15–M18. It joins the exact early tie, the determinant-sector obstruction and the qutrit witnesses into the first ideal synthesis.
 
-**Conceptual connection:** A model-specific minimum-budget result survives after the inherited measurement architecture is credited.
+**Conceptual connection:** The comparator with effectwise biseparability lets different effects use different cuts. With three qutrits, randomizing complete fixed-cut measurements gives the sequential optimum.
 
-**Source pointers:** Anchor §§5.3–5.4 for finite covariant comparison context; [finite statement](../science/finite-budget.md#the-finite-statement) and [attribution](../references/RELATED_WORK.md).
+**Source pointers:** Anchor §5.3 for seeded measurements, [first-advantage criterion](../science/collective-minimax.md) and [qutrit comparison](../science/measurement-hierarchy.md).
 
-### M20 — Finite randomness preserves the global comparison
+### M20 — Finite designs and finite random settings
 
 **Central question:** How can a continuous Haar calculation lead to a receiver with finitely many random bits?
 
-**Understanding target:** Explain the coupling between an ideal random setting and a finite-bit approximation, including a deterministic fallback for poor conditioning. Recognize why its failure probability contributes to risk rather than causing unlimited retries.
+**Understanding target:** Explain why a projective design through degree $`N+1`$ preserves collective normalization and pointwise score. For the worked pair apparatus, explain the coupling from its ideal rotation to a finite-bit implementation and include the conditioning fallback in the risk.
 
-**Dependencies and story role:** M05, M09, M19. It closes a physical interface left open by the ideal covariance argument.
+**Dependencies and story role:** M05, M09, M19. It connects polynomial moment integration in the ideal optimum to the distinct random-setting problem in the pair implementation.
 
-**Conceptual connection:** Finite quantum outcomes and finite random settings are different requirements; both are handled explicitly without assuming an unconstructed exact unitary design.
+**Conceptual connection:** The exact collective design integrates finitely many polynomial moments. The practical pair receiver implements its own random rotation approximately and charges the resulting risk.
 
-**Source pointers:** Anchor §5.3 for the ideal covariance principle; [constructive finite randomization](../science/implementation.md#a-constructive-finite-replacement-for-a-haar-setting).
+**Source pointers:** Anchor §5.3 for the covariance principle, [finite collective POVM](../science/collective-minimax.md) and [pair randomization](../science/implementation.md#a-constructive-finite-replacement-for-a-haar-setting).
 
 ### M21 — Ancillas and joint operations are resources
 
@@ -360,12 +360,12 @@ Each milestone is a conceptual target, rather than a claim to cover every techni
 
 ### M30 — The complete scientific contribution
 
-**Central question:** What can now be concluded, after inherited methods, assumptions and all relevant costs are stated?
+**Central question:** What can the same missing-ray example establish under ideal collective access and under a calibrated pair receiver's physical constraints?
 
-**Understanding target:** Tell the full story: a promised missing ray, no collective benefit at two specimens, a certified finite pair advantage at three, a finite implementation, and a separate noise/calibration theorem with every specimen and failure counted. State the coherent-error boundary and distinguish specimen savings from laboratory-time or hardware-cost claims.
+**Understanding target:** State the exact ideal risk for a uniform occupied hyperplane and the onset at $`d`$ specimens for $`d\ge3`$. Read the four qutrit measurement levels with their precise comparators. Then state the qutrit pair implementation and the separate noisy-memory benefit under the fully charged calibration ledger, including the coherent-error and entanglement-breaking limits.
 
-**Dependencies and story role:** M12–M29. This final synthesis reconnects both operating points and their limitations to the original task.
+**Dependencies and story role:** M12–M29. This final synthesis reconnects the ideal theorem and physical operating points to the original task.
 
-**Conceptual connection:** The contribution is a model-specific finite operational separation and a stated calibration boundary. The architecture, Keyl matrix estimator, general PPT method and earlier two-copy experiments remain credited; neither numerical checks nor a polished receiver certify broader priority or hardware performance.
+**Conceptual connection:** The same ray loss enables a fair specimen comparison while each theorem retains its own source, controls and accounting. The collective construction credits the inherited Keyl measurement. The calibration guarantee measures the gain in specimens under its declared assumptions.
 
-**Source pointers:** Anchor §6; [scientific route](../science/README.md), [model summary](../science/model.md#results-and-their-domains), [related work](../references/RELATED_WORK.md) and [verification scope](../verification/README.md).
+**Source pointers:** Anchor §6 for statistical scope, [collective theorem](../science/collective-minimax.md), [three-qutrit hierarchy](../science/measurement-hierarchy.md), [calibration proof](../science/calibration.md) and [verification scope](../verification/README.md).

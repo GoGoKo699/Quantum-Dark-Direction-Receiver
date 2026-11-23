@@ -20,6 +20,15 @@ Scientific comparison and bibliographic verification were performed on **17 Nove
 | DDG20 | arXiv:2001.11742v2, 1 September 2020; J. Phys. A 53, 363001 | [Full preprint](https://arxiv.org/pdf/2001.11742v2), especially Sections 1.2, 2, 5.3–5.5; bibliography checked against the [primary author record](https://arxiv.org/abs/2001.11742v2). |
 | Watrous18 | Cambridge University Press 2018; author manuscript | [Author book page](https://cs.uwaterloo.ca/~watrous/TQI/) and its front matter; verified Sections 1.2.3, 2.3, 3.2, 6.1.3, 6.2.3 and 7.2. The manuscript is linked for personal reading, not redistributed here. |
 
+## 23 November 2026 revision
+
+| Source | Evidence inspected |
+|---|---|
+| [Keyl](https://arxiv.org/abs/quant-ph/0412053) | Section 3.2 and equation (20) define the inherited highest-weight measurement. Sections 4.4–4.5 give its construction and large-deviation analysis. |
+| [Yi et al.](https://arxiv.org/html/2412.03383v2) | Sections II.3–II.4 distinguish complete fixed-cut mixtures from effectwise biseparability. The finite theorem compares the two sequential orders for pure qubits. |
+| [Scharnhorst–Spilecki–Wright](https://arxiv.org/abs/2510.07699) | Section 1.1, flat projector-state tomography model and trace/Bures guarantees. |
+| [Grootveld–Maloney–Pollack–Wu](https://arxiv.org/abs/2606.16948) | Theorem 1.2, rate-function optimality for consistent covariant full-state estimation. |
+
 ## Read-only scientific repository pins
 
 | Repository | Inspected revision | Relevant account |
@@ -28,7 +37,7 @@ Scientific comparison and bibliographic verification were performed on **17 Nove
 | Quantum Readout Rank Threshold | `7be2f7b2cf400425ea236c0feef4617e2ba7534f` | [Pair construction](https://github.com/GoGoKo699/Quantum-Readout-Rank-Threshold/blob/7be2f7b2cf400425ea236c0feef4617e2ba7534f/science/two-copy-readout.md), [Haar comparison](https://github.com/GoGoKo699/Quantum-Readout-Rank-Threshold/blob/7be2f7b2cf400425ea236c0feef4617e2ba7534f/science/haar-pair-readout.md) |
 | Quantum Off the Wall | `f9216cb24ba27183dcffa8fd45cce31fe89827a4` | [Unknown dark mode](https://github.com/GoGoKo699/Quantum-Off-the-Wall/blob/f9216cb24ba27183dcffa8fd45cce31fe89827a4/science/sensing-applications.md#1-calibrating-an-unknown-dark-mode) |
 
-No source repository was edited. Later revisions may change those projects; the comparison above concerns the recorded versions.
+The source pins delimit the scientific comparison. The November 23 [Off the Wall follow-up](https://github.com/GoGoKo699/Quantum-Off-the-Wall/blob/2089579ec2aac23d71be5c9873baf63521ccc65f/science/sensing-applications.md#1-calibrating-an-unknown-dark-mode) treats paid pair readout under its declared control tolerances.
 
 ## Additional scoped checks
 

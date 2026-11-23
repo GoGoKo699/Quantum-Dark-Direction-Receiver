@@ -6,7 +6,8 @@ import subprocess
 import sys
 
 CHECKS = ['check_finite_budget.py','check_calibration.py',
-          'check_implementation.py','check_global_bounds.py','check_receiver.py']
+          'check_implementation.py','check_global_bounds.py','check_receiver.py',
+          'check_collective_minimax.py']
 
 
 def main():
